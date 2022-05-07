@@ -1,0 +1,35 @@
+<section class="app-container">
+  <header>
+  <mat-toolbar color="primary">
+      <span style="color:white;font-weight: bold;font-size: 20px;">MEAN STACK APP</span>
+    </mat-toolbar>
+</header>
+</section>
+<router-outlet></router-outlet>
+
+  <div class="row">
+    <input type="text"  [(ngModel)]="user.name" name="firstname" placeholder="Name">
+    <input type="text"  [(ngModel)]="user.mobileNo" name="firstname" placeholder="Mobile No">
+    <input type="text" [(ngModel)]="user.email" name="firstname" placeholder="Email">
+    <button class="btn" (click)="saveUser()"> Save User</button>
+  </div>
+<div class="tab">
+  <table id="customers" >
+
+    <tr style="background-color: #3f51b5;color: white;font-weight: bold;">
+      <td>Id</td>
+      <td>Name</td>
+      <td>Mobile No</td>
+      <td>Email</td>
+    </tr>
+    <tr *ngFor="let x of users">
+      <td>{{x._id}}</td>
+      <td>{{x.name}}</td>
+      <td>{{x.mobileNo}}</td>
+      <td>{{x.email}}</td>
+    </tr>
+   </table>
+</div>
+
+
+

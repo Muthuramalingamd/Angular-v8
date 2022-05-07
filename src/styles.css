@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 64px;
+    background-color: #3f51b5;
+}
